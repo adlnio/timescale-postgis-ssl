@@ -26,4 +26,6 @@ ssl = on
 ssl_cert_file = '$SSL_DIR/server.crt'
 ssl_key_file = '$SSL_DIR/server.key'
 ssl_ca_file = '$SSL_DIR/root.crt'
+cshared_preload_libraries = 'timescaledb,pg_stat_statements'
+cpg_stat_statements.track = 'all'
 EOF
